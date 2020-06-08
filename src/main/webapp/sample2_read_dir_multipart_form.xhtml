@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020, https://github.com/911992 All rights reserved.
+License BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)
+-->
+
+<!--<![CDATA[
+
+WAsys_pojo_http_data_servlet3_wrapper_test
+File: sample2_read_dir_multipart_form.xhtml
+Created on: May 27, 2020 4:35:43 AM
+    @author https://github.com/911992
+ 
+History:
+    initial version: 0.1(20200526)
+
+]]>-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>ls a directory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1><code>ls</code> a directory(multipart)</h1>
+        <form action="./sample2" method="POST" enctype="multipart/form-data">
+            <input name="_charset_" type="hidden"/>
+            <label for="path">Dir Path: </label><input id="path" name="path" type="text"/><br/>
+            <input type="submit" value="ls"/>
+        </form>
+    </body>
+</html>

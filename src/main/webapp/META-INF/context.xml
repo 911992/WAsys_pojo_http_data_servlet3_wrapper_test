@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020, https://github.com/911992 All rights reserved.
+License BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)
+-->
+
+<!--<![CDATA[
+
+WAsys_pojo_http_data_servlet3_wrapper_test
+File: context.xml
+Created on: May 26, 2020 4:49:3 AM
+    @author https://github.com/911992
+ 
+History:
+    initial version: 0.1(20200526)
+
+]]>-->
+<Context path="/WAsys_pojo_http_data_servlet3_wrapper_test"/>

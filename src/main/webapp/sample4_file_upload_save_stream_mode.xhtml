@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020, https://github.com/911992 All rights reserved.
+License BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)
+-->
+
+<!--<![CDATA[
+
+WAsys_pojo_http_data_servlet3_wrapper_test
+File: sample4_file_upload_save_stream_mode.xhtml
+Created on: May 31, 2020 12:52:55 AM
+    @author https://github.com/911992
+ 
+History:
+    initial version: 0.1(20200526)
+
+]]>-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Sample Multipart File Upload Form (Streaming Mode)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1>Multipart File Upload Form</h1>
+        <form action="./sample4" method="POST" enctype="multipart/form-data">
+            <input name="_charset_" type="hidden"/>
+            <label for="dir">Dir path to save file: </label><input id="dir" name="dir" type="text" /><br/>
+            <label for="file">Select a file to upload: </label><input id="file" name="file" type="file"/><br/>
+            <input type="submit" value="proceed"/>
+        </form>
+    </body>
+</html>

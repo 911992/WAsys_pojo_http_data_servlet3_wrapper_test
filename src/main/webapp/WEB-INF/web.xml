@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020, https://github.com/911992 All rights reserved.
+License BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)
+-->
+
+<!--<![CDATA[
+
+WAsys_pojo_http_data_servlet3_wrapper_test
+File: web.xml
+Created on: May 26, 2020 5:45:17 AM
+    @author https://github.com/911992
+ 
+History:
+    initial version: 0.1(20200526)
+
+]]>-->
+
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <welcome-file-list>
+        <welcome-file>root.xhtml</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Sample0_Login</servlet-name>
+        <servlet-class>wasys.lib.pojo_http_data.servlet3_wrapper_test.servlet.Sample0_Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sample1_Calc_Add</servlet-name>
+        <servlet-class>wasys.lib.pojo_http_data.servlet3_wrapper_test.servlet.Sample1_Calc_Add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sample2_Multipart_Form_Param</servlet-name>
+        <servlet-class>wasys.lib.pojo_http_data.servlet3_wrapper_test.servlet.Sample2_Read_Dir_Multipart_Form</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sample3_File_Upload_Handle</servlet-name>
+        <servlet-class>wasys.lib.pojo_http_data.servlet3_wrapper_test.servlet.Sample3_File_Upload_Handle_Image_Pass_Stream</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sample4_File_Upload_Save_Stream_Mode</servlet-name>
+        <servlet-class>wasys.lib.pojo_http_data.servlet3_wrapper_test.servlet.Sample4_File_Upload_Save_Stream_Mode</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sample0_Login</servlet-name>
+        <url-pattern>/sample0</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample1_Calc_Add</servlet-name>
+        <url-pattern>/sample1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample2_Multipart_Form_Param</servlet-name>
+        <url-pattern>/sample2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample3_File_Upload_Handle</servlet-name>
+        <url-pattern>/sample3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample4_File_Upload_Save_Stream_Mode</servlet-name>
+        <url-pattern>/sample4</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <listener>
+        <listener-class>wasys.lib.pojo_http_data.servlet3_wrapper.Servlet_Request_Data_Handler_Servlet_Ctx_Listener</listener-class>
+    </listener>
+    <!-- ============================================================================================================== -->
+    <!-- ============================================================================================================== -->
+    <!--Config for internal pool of Generic_Object_Filler type - BEGIN -->
+    <env-entry>
+        <env-entry-name>WAsys_Generic_Object_Filler_ARRAYLIST_POOL_MAX</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>16</env-entry-value>
+    </env-entry>  
+    <!--Config for internal pool of Generic_Object_Filler type - END   -->
+    <!-- ============================================================================================================== -->
+    <!-- ============================================================================================================== -->
+    
+    
+    
+    <!-- ============================================================================================================== -->
+    <!-- ============================================================================================================== -->
+    <!--Config for WAsys_pojo_http_data_servlet3_wrapper, the default Pool of Servlet_Request_Data_Handler type - BEGIN -->
+    <env-entry>
+        <env-entry-name>Servlet_Request_Data_Handler_POOL_INIT_LEN</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <!-- -1 to specify using the dfault pool value, probably 0 -->
+        <env-entry-value>-1</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <env-entry-name>Servlet_Request_Data_Handler_POOL_MAX_LEN</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>32</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <env-entry-name>Servlet_Request_Data_Handler_POOL_FULL_POL</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <!-- values should be one of wasys.lib.generic_object_pool.Full_Pool_Object_Creation_Policy enum consts -->
+        <env-entry-value>Create_New_No_Pooling</env-entry-value>
+    </env-entry>
+    <!--Config for WAsys_pojo_http_data_servlet3_wrapper, the default Pool of Servlet_Request_Data_Handler type - END   -->
+    <!-- ============================================================================================================== -->
+    <!-- ============================================================================================================== -->
+</web-app>

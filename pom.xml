@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<!--
+Copyright (c) 2020, https://github.com/911992 All rights reserved.
+License BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)
+-->
+
+<!--<![CDATA[
+
+WAsys_pojo_http_data_servlet3_wrapper_test
+File: pom.xml
+Created on: Jun 8, 2020 1:16:17 AM
+    @author https://github.com/911992
+ 
+History:
+    initial version: 0.1(20200526)
+
+]]>-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.911992</groupId>
+    <artifactId>WAsys_pojo_http_data_servlet3_wrapper_test</artifactId>
+    <version>0.1</version>
+    <packaging>war</packaging>
+    <url>https://github.com/911992/WAsys_pojo_http_data_servlet3_wrapper_test</url>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Test sample Servlet Web for WAsys_pojo_http_data_servlet3_wrapper</description>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <licenses>
+        <license>
+            <name>The 3-Clause BSD License</name>
+            <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+    </licenses>
+    
+    <developers>
+        
+        <developer>
+            <name>911992</name>
+            <url>https://github.com/911992</url>
+        </developer>
+        
+    </developers>
+    
+    
+    <dependencies>
+        
+        <dependency>
+            <groupId>com.github.911992</groupId>
+            <artifactId>WAsys_pojo_http_data_servlet3_wrapper</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+        
+    </dependencies>
+    
+    <build>
+        <plugins>
+            
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
+</project>
