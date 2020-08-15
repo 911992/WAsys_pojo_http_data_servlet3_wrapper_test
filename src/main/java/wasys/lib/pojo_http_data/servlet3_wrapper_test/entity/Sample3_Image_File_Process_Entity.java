@@ -10,6 +10,10 @@ Created on: May 28, 2020 12:14:45 AM
     @author https://github.com/911992
  
 History:
+    0.2.5 (20200813)
+        • Updated the image_ref Field_Definition annotation to follow changes of WAsys_pojo_http_data:0.2.5
+        • Changed max_len_val, and min_len_val to max_val_or_len, min_val_or_len
+
     initial version: 0.1(20200526)
 */
 
@@ -42,7 +46,7 @@ public class Sample3_Image_File_Process_Entity extends Fillable_Object_Adapter{
     @No_Param
     private static final String IMG_PARAM_NAME="img";
     
-    @Field_Definition(param_name = IMG_PARAM_NAME,min_len_val = 1,max_len_val = 5242880 /*5 MB*/)
+    @Field_Definition(param_name = IMG_PARAM_NAME,min_val_or_len = 1,max_val_or_len = 5242880 /*5 MB*/)
     private final OutputStream image_ref=null;
 
     @Override

@@ -10,6 +10,10 @@ Created on: May 27, 2020 3:07:05 AM
     @author https://github.com/911992
  
 History:
+    0.2.5 (20200813)
+        • Updated the val0(a), and val1(b) Field_Definition annotations to follow changes of WAsys_pojo_http_data:0.2.5
+        • Changed max_len_val, and min_len_val to max_val_or_len, min_val_or_len
+
     initial version: 0.1(20200526)
 */
 
@@ -31,9 +35,10 @@ import wasys.lib.pojo_http_data.api.annotations.No_Param;
  */
 public class Sample1_Calc_Entity_Pooled extends Poolable_Fillable_Object_Adapter{
 
-    @Field_Definition(param_name = "a",min_len_val = 0,max_len_val = 127)
+    @Field_Definition(param_name = "a",min_val_or_len = 0,max_val_or_len = 127)
     private int val0;
-    @Field_Definition(param_name = "b",min_len_val = 0,max_len_val = 256)
+
+    @Field_Definition(param_name = "b",min_val_or_len = 0,max_val_or_len = 256)
     private int val1;
 
     @Override

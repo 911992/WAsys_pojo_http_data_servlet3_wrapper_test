@@ -10,6 +10,11 @@ Created on: May 26, 2020 4:55:51 AM
     @author https://github.com/911992
  
 History:
+    0.2.5 (20200813)
+        • Updated the email, and password Field_Definition annotations to follow changes of WAsys_pojo_http_data:0.2.5
+        • Changed max_len_val, and min_len_val to max_val_or_len, min_val_or_len
+        
+
     initial version: 0.1(20200526)
 */
 
@@ -24,10 +29,10 @@ import wasys.lib.pojo_http_data.api.annotations.Field_Definition;
  * @author https://github.com/911992
  */
 public class Sample0_Login_Entity extends Fillable_Object_Adapter{
-    @Field_Definition(max_len_val = 320)
+    @Field_Definition(max_val_or_len = 320)
     private String email;
     
-    @Field_Definition(param_name = "pass",min_len_val = 4)
+    @Field_Definition(param_name = "pass",min_val_or_len = 4)
     private String password;
 
     public String getEmail() {
