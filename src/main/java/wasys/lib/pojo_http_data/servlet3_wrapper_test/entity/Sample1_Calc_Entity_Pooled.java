@@ -10,6 +10,11 @@ Created on: May 27, 2020 3:07:05 AM
     @author https://github.com/911992
  
 History:
+    0.3.1 (20200824)
+        • Integrated with WAsys_simple_generic_object_pool 0.5.1 API change
+        • Changed wasys.lib.generic_object_pool.api.Object_Factory to wasys.lib.java_type_util.reflect.type_sig.Object_Factory
+        • Removed redundant wasys.lib.generic_object_pool.api.Poolable_Object import
+
     0.2.5 (20200813)
         • Updated the val0(a), and val1(b) Field_Definition annotations to follow changes of WAsys_pojo_http_data:0.2.5
         • Changed max_len_val, and min_len_val to max_val_or_len, min_val_or_len
@@ -22,8 +27,7 @@ package wasys.lib.pojo_http_data.servlet3_wrapper_test.entity;
 import wasys.lib.generic_object_pool.Generic_Object_Pool_Policy;
 import wasys.lib.generic_object_pool.Object_Pool;
 import wasys.lib.generic_object_pool.Pool_Context;
-import wasys.lib.generic_object_pool.api.Object_Factory;
-import wasys.lib.generic_object_pool.api.Poolable_Object;
+import wasys.lib.java_type_util.reflect.type_sig.Object_Factory;
 import wasys.lib.pojo_http_data.api.Poolable_Fillable_Object_Adapter;
 import wasys.lib.pojo_http_data.api.annotations.Field_Definition;
 import wasys.lib.pojo_http_data.api.annotations.No_Param;
@@ -48,9 +52,9 @@ public class Sample1_Calc_Entity_Pooled extends Poolable_Fillable_Object_Adapter
     
     
     
-    private static final class Factory implements Object_Factory{
+    private static final class Factory implements Object_Factory<Sample1_Calc_Entity_Pooled>{
         @Override
-        public Poolable_Object create_object() {
+        public Sample1_Calc_Entity_Pooled create_object(Class arg_type) {
             return new Sample1_Calc_Entity_Pooled();
         }
     }

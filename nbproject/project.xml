@@ -19,6 +19,10 @@
                     <file>${reference.WAsys_pojo_http_data_servlet3_wrapper.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
+                <library dirs="200">
+                    <file>${reference.WAsys_Java_type_util.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
             </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
@@ -31,6 +35,14 @@
         </libraries>
         <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1"/>
         <references xmlns="http://www.netbeans.org/ns/ant-project-references/1">
+            <reference>
+                <foreign-project>WAsys_Java_type_util</foreign-project>
+                <artifact-type>jar</artifact-type>
+                <script>build.xml</script>
+                <target>jar</target>
+                <clean-target>clean</clean-target>
+                <id>jar</id>
+            </reference>
             <reference>
                 <foreign-project>WAsys_pojo_http_data</foreign-project>
                 <artifact-type>jar</artifact-type>
