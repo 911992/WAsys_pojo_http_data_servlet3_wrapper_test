@@ -7,7 +7,7 @@ Sample usage for [WAsys_pojo_http_data_servlet3_wrapper](https://github.com/9119
 This repo contains some samples of utilizing the [WAsys_pojo_http_data_servlet3_wrapper](https://github.com/911992/WAsys_pojo_http_data_servlet3_wrapper) repo with a servlet 3.0 container, e.g. Apache Tomcat.  
 
 ## Revision History
-Latest: v0.3.1 (Aug 13, 2020)  
+Latest: v0.3.5 (Sept 1, 2020)  
 Please refer to [release_note.md](./release_note.md) file
 
 ## Requirments
@@ -26,7 +26,7 @@ For maven, dependency to `WAsys_pojo_http_data_servlet3_wrapper` is enough, sinc
 <dependency>
     <groupId>com.github.911992</groupId>
     <artifactId>WAsys_pojo_http_data_servlet3_wrapper</artifactId>
-    <version>0.3.1</version>
+    <version>0.3.5</version>
 </dependency>
 ```
 

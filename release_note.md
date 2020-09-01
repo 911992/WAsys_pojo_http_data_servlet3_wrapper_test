@@ -4,6 +4,19 @@ repo: https://github.com/911992/WAsys_pojo_http_data_servlet3_wrapper_test
 Author: [911992](https://github.com/911992)  
 *(NOTE: following list carries mentionable(not all) changes. For detailed changes, check source code(s))*  
 
+**0.3.5** (Sept 1, 2020)
+
+0. Related/similar fix like update `0.3.1`
+1. `(－‸ლ)` <s>becasue of `WAsys_pojo_http_data` version `0.3.5`</s>
+2. Repo
+    * Updated `README.md`
+        * Updated the maven `WAsys_pojo_http_data_servlet3_wrapper` dependency to `0.3.5`
+    * Updated `pom.xml` file
+        * Artifact to version `0.3.5`
+        * Updated the dependency of `WAsys_pojo_http_data_servlet3_wrapper` to `0.3.5`
+
+<hr/>
+
 **0.3.1** (Aug 24, 2020)
 
 0. `(－‸ლ)` <s>becasue of `WAsys_pojo_http_data` version `0.2.9`</s>

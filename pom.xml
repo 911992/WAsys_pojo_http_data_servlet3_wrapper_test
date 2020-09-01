@@ -13,6 +13,10 @@ Created on: Jun 8, 2020 1:16:17 AM
     @author https://github.com/911992
  
 History:
+    0.3.5 (20200824)
+        • Updated the dependency of WAsys_pojo_http_data_servlet3_wrapper to 0.3.5
+        • Updated the artifact to 0.3.5
+
     0.3.1 (20200824)
         • Updated the dependency of WAsys_pojo_http_data_servlet3_wrapper to 0.3.1
         • Updated the artifact to 0.3.1
@@ -29,7 +33,7 @@ History:
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.911992</groupId>
     <artifactId>WAsys_pojo_http_data_servlet3_wrapper_test</artifactId>
-    <version>0.3.1</version>
+    <version>0.3.5</version>
     <packaging>war</packaging>
     <url>https://github.com/911992/WAsys_pojo_http_data_servlet3_wrapper_test</url>
     <name>${project.groupId}:${project.artifactId}</name>
@@ -61,7 +65,7 @@ History:
         <dependency>
             <groupId>com.github.911992</groupId>
             <artifactId>WAsys_pojo_http_data_servlet3_wrapper</artifactId>
-            <version>0.3.1</version>
+            <version>0.3.5</version>
         </dependency>
         
     </dependencies>
